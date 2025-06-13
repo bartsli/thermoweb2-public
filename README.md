@@ -1,85 +1,87 @@
+[English](README.md) | [Polski](README.pl.md)
+
 # ThermoWEB 2.0 &#x1F321;
 
-System do monitorowania i analizy temperatury przez Internet, umożliwiający użytkownikom zdalne monitorowanie i udostępnianie pomiarów ze swoich stacji i czujników. Dzięki ThermoWEB możesz kontrolować temperaturę w dowolnym miejscu - w kotłowni, szklarni, domu czy basenie - z każdego urządzenia podłączonego do Internetu.
+An Internet-based temperature monitoring and analysis platform that enables users to remotely monitor and share measurements from their stations and sensors. With ThermoWEB, you can control temperature anywhere - in a boiler room, greenhouse, home, or swimming pool - from any Internet-connected device.
 
-System dostępny online: [thermoweb.wtx.pl](http://thermoweb.wtx.pl)
+System available online: [thermoweb.wtx.pl](http://thermoweb.wtx.pl)
 
-## &#x1F4D6; Opis
-ThermoWEB 2.0 to otwarty system do monitorowania temperatury, gdzie każdy użytkownik może:
-- &#x1F4E1; Dodać własne stacje pomiarowe i czujniki
-- &#x1F4BB; Udostępniać pomiary publicznie lub prywatnie
-- &#x1F4A1; Korzystać z publicznych pomiarów innych użytkowników
-- &#x1F4CA; Analizować trendy i zmiany temperatury
-- &#x1F4E2; Tworzyć własną sieć monitoringu
+## &#x1F4D6; Description
+ThermoWEB 2.0 is an open temperature monitoring system where each user can:
+- &#x1F4E1; Add their own measurement stations and sensors
+- &#x1F4BB; Share measurements publicly or privately
+- &#x1F4A1; Use public measurements from other users
+- &#x1F4CA; Analyze temperature trends and changes
+- &#x1F4E2; Create their own monitoring network
 
-## &#x1F4BB; Architektura systemu
-**Schemat działania ThermoWEB 2.0**  
-![Architektura systemu](/pliki/architektura_1.png)
+## &#x1F4BB; System Architecture
+**ThermoWEB 2.0 Operation Schema**  
+![System Architecture](/pliki/architektura_1.png)
 
-## &#x1F4E1; Czujniki i hardware
-**Zestaw pomiarowy - adapter i czujniki**  
-![Zestaw pomiarowy](/pliki/termo_zestaw_1.jpg)
+## &#x1F4E1; Sensors and Hardware
+**Measurement Kit - Adapter and Sensors**  
+![Measurement Kit](/pliki/termo_zestaw_1.jpg)
 
-**Adapter umożliwiający sprzężenie magistrali 1-wire z RS232**  
-![Adapter RS232](/pliki/termo_adapter_1.jpg)
+**Adapter enabling 1-wire bus to RS232 coupling**  
+![RS232 Adapter](/pliki/termo_adapter_1.jpg)
 
-**Czujniki temperatury - różne modele**  
-![Czujniki temperatury](/pliki/termo_czujniki_1.jpg)
+**Temperature Sensors - Various Models**  
+![Temperature Sensors](/pliki/termo_czujniki_1.jpg)
 
-**Pierwsza wersja ThermoWEB - historia projektu**  
-![Pierwsza wersja ThermoWEB](/pliki/thermoweb_v1.png)
+**First Version of ThermoWEB - Project History**  
+![First Version of ThermoWEB](/pliki/thermoweb_v1.png)
 
 ## &#x1F3A5; Demo
-### Film demonstracyjny
-[![Film instruktażowy ThermoWEB 2.0](http://img.youtube.com/vi/iuZR4jFVNRk/0.jpg)](http://www.youtube.com/watch?v=iuZR4jFVNRk)
+### Demo Video
+[![ThermoWEB 2.0 Tutorial Video](http://img.youtube.com/vi/iuZR4jFVNRk/0.jpg)](http://www.youtube.com/watch?v=iuZR4jFVNRk)
 
-## &#x1F464; Autor
+## &#x1F464; Author
 [Bartek Śliwiński](https://www.linkedin.com/in/bsliwinski/)
 
-## &#x2728; Główne funkcjonalności
-- &#x1F321; Zdalny monitoring temperatury z dowolnego miejsca na świecie
-- &#x1F321; Wizualizacja temperatur maksymalnych i minimalnych na termometrze graficznym
-- &#x1F4C8; Wizualizacja danych w formie interaktywnych wykresów
-- &#x1F4CD; Interaktywna mapa z lokalizacjami czujników
-- &#x1F321; Dodawanie i konfiguracja czujników temperatury
-- &#x1F512; Konfiguracja widoczności czujników (tryb publiczny/prywatny)
-- &#x1F511; Rejestracja i zarządzanie kontem użytkownika
-- &#x1F4E6; Eksport danych w formacie CSV
+## &#x2728; Main Features
+- &#x1F321; Remote temperature monitoring from anywhere in the world
+- &#x1F321; Visualization of maximum and minimum temperatures on a graphical thermometer
+- &#x1F4C8; Data visualization in the form of interactive charts
+- &#x1F4CD; Interactive map with sensor locations
+- &#x1F321; Adding and configuring temperature sensors
+- &#x1F512; Configuring sensor visibility (public/private mode)
+- &#x1F511; User account registration and management
+- &#x1F4E6; Data export in CSV format
 
-## &#x1F4C2; Mapa serwisu
+## &#x1F4C2; Site Map
 
-### Publiczna część serwisu
-- `/` - Strona główna systemu
-- `/pomiary/` - Aktualne pomiary temperatury
-- `/pomiary/{stacja}/{czujnik}/` - Pomiary z konkretnego czujnika
-- `/mapa/` - Lokalizacja stacji pomiarowych
-- `/info/` - Informacje o ThermoWEB
-- `/jak_dziala/` - Jak działa ThermoWEB
-- `/demo/` - Demo działania ThermoWEB 2.0
-- `/kontakt/` - Formularz kontaktowy
+### Public Section
+- `/` - Main page
+- `/pomiary/` - Current temperature measurements
+- `/pomiary/{station}/{sensor}/` - Measurements from a specific sensor
+- `/mapa/` - Measurement station locations
+- `/info/` - ThermoWEB information
+- `/jak_dziala/` - How ThermoWEB works
+- `/demo/` - ThermoWEB 2.0 demo
+- `/kontakt/` - Contact form
 
-### Panel użytkownika
-- `/moje_czujniki/` - Zarządzanie czujnikami
-- `/moje_czujniki/{czujnik}/` - Szczegóły konkretnego czujnika
-- `/dodaj_czujnik/` - Dodawanie nowego czujnika
-- `/usun_czujnik/` - Usuwanie czujnika
-- `/wykresy/` - Wizualizacja danych
-- `/wykresy/{czujnik}/` - Wykres dla konkretnego czujnika
-- `/ustawienia/` - Ustawienia systemu
-- `/moje_dane/` - Dane użytkownika
-- `/faq/` - Często zadawane pytania
+### User Panel
+- `/moje_czujniki/` - Sensor management
+- `/moje_czujniki/{sensor}/` - Specific sensor details
+- `/dodaj_czujnik/` - Add new sensor
+- `/usun_czujnik/` - Remove sensor
+- `/wykresy/` - Data visualization
+- `/wykresy/{sensor}/` - Chart for specific sensor
+- `/ustawienia/` - System settings
+- `/moje_dane/` - User data
+- `/faq/` - Frequently asked questions
 
-### API i integracje
-- `/rss.xml` - Kanał RSS z pomiarami ThermoWEB
-- `/rss_{stacja}.xml` - Kanał RSS dla konkretnej stacji
-- `/wap/` - Dostęp przez WAP
-- `/wap/{stacja}/` - WAP dla konkretnej stacji
-- `/thermoweb_{stacja}.js` - Skrypt JavaScript z pomiarami
-- `/generuj_kod_{stacja}/` - Generator kodu do osadzenia na stronie
+### API and Integrations
+- `/rss.xml` - RSS feed with ThermoWEB measurements
+- `/rss_{station}.xml` - RSS feed for specific station
+- `/wap/` - WAP access
+- `/wap/{station}/` - WAP for specific station
+- `/thermoweb_{station}.js` - JavaScript script with measurements
+- `/generuj_kod_{station}/` - Code generator for website embedding
 
-## &#x2696; Licencja
+## &#x2696; License
 &#x00A9; 2007-2025 Bartłomiej Śliwiński  
-Wszelkie prawa zastrzeżone.
+All rights reserved.
 
-## &#x1F4E7; Kontakt
-Wszelkie problemy, sugestie i propozycje ulepszeń proszę zgłaszać poprzez system Issues na GitHubie. Dzięki temu będę mógł sprawniej zarządzać zgłoszeniami i współpracować nad rozwojem projektu.
+## &#x1F4E7; Contact
+Please report any issues, suggestions, and improvement proposals through the GitHub Issues system. This will help me manage reports more efficiently and collaborate on project development.
