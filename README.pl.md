@@ -6,19 +6,19 @@ System do monitorowania i analizy temperatury przez Internet, umożliwiający u�
 
 ## 🛠️ Technologie
 ### Hardware & Komunikacja
-[![1-Wire](https://img.shields.io/badge/1--Wire-black?style=flat-square&logo=1wire&logoColor=white)](https://www.maximintegrated.com/en/products/1-wire.html)
-[![RS232](https://img.shields.io/badge/RS232-black?style=flat-square&logo=rs232&logoColor=white)](https://en.wikipedia.org/wiki/RS-232)
+[![1-Wire](https://img.shields.io/badge/1--Wire-Magistrala-black?style=flat-square&logo=1wire&logoColor=white)](https://www.maximintegrated.com/en/products/1-wire.html)
+[![RS232](https://img.shields.io/badge/RS232-Standard-black?style=flat-square&logo=rs232&logoColor=white)](https://en.wikipedia.org/wiki/RS-232)
 
 ### Backend
-[![Java](https://img.shields.io/badge/Java-orange?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com)
-[![SOAP](https://img.shields.io/badge/SOAP-black?style=flat-square&logo=soapui&logoColor=white)](https://www.w3.org/TR/soap/)
-[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
-[![Apache](https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white)](https://httpd.apache.org)
+[![Java](https://img.shields.io/badge/Java-8%2B-blue?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com)
+[![SOAP](https://img.shields.io/badge/SOAP-Protokół-black?style=flat-square&logo=soapui&logoColor=white)](https://www.w3.org/TR/soap/)
+[![PHP](https://img.shields.io/badge/PHP-Web-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-BazaDanych-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![Apache](https://img.shields.io/badge/Apache-SerwerWeb-D22128?style=flat-square&logo=apache&logoColor=white)](https://httpd.apache.org)
 
 ### Frontend
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Flash](https://img.shields.io/badge/Flash-red?style=flat-square&logo=adobe&logoColor=white)](https://www.adobe.com/products/flashplayer/end-of-life.html) (przestarzały)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Język-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Flash](https://img.shields.io/badge/Flash-Przestarzały-red?style=flat-square&logo=adobe&logoColor=white)](https://www.adobe.com/products/flashplayer/end-of-life.html)
 
 System dostępny online: [thermoweb.wtx.pl](http://thermoweb.wtx.pl)
 
