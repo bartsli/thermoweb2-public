@@ -6,19 +6,19 @@ An Internet-based temperature monitoring and analysis platform that enables user
 
 ## 🛠️ Technologies
 ### Hardware & Communication
-![1-Wire](https://img.shields.io/badge/1--Wire-000000?style=for-the-badge&logo=1wire&logoColor=white)
-![RS232](https://img.shields.io/badge/RS232-000000?style=for-the-badge&logo=rs232&logoColor=white)
+[![1-Wire](https://img.shields.io/badge/1--Wire-black?style=flat-square&logo=1wire&logoColor=white)](https://www.maximintegrated.com/en/products/1-wire.html)
+[![RS232](https://img.shields.io/badge/RS232-black?style=flat-square&logo=rs232&logoColor=white)](https://en.wikipedia.org/wiki/RS-232)
 
 ### Backend
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![SOAP](https://img.shields.io/badge/SOAP-000000?style=for-the-badge&logo=soap&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
+[![Java](https://img.shields.io/badge/Java-orange?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com)
+[![SOAP](https://img.shields.io/badge/SOAP-black?style=flat-square&logo=soapui&logoColor=white)](https://www.w3.org/TR/soap/)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![Apache](https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white)](https://httpd.apache.org)
 
 ### Frontend
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Flash](https://img.shields.io/badge/Flash-FF0000?style=for-the-badge&logo=adobe&logoColor=white) (legacy)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Flash](https://img.shields.io/badge/Flash-red?style=flat-square&logo=adobe&logoColor=white)](https://www.adobe.com/products/flashplayer/end-of-life.html) (legacy)
 
 System available online: [thermoweb.wtx.pl](http://thermoweb.wtx.pl)
 
