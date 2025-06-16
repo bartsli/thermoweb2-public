@@ -4,6 +4,22 @@
 
 An Internet-based temperature monitoring and analysis platform that enables users to remotely monitor and share measurements from their stations and sensors. With ThermoWEB, you can control temperature anywhere - in a boiler room, greenhouse, home, or swimming pool - from any Internet-connected device.
 
+## 🛠️ Technologies
+### Hardware & Communication
+![1-Wire](https://img.shields.io/badge/1--Wire-000000?style=for-the-badge&logo=1wire&logoColor=white)
+![RS232](https://img.shields.io/badge/RS232-000000?style=for-the-badge&logo=rs232&logoColor=white)
+
+### Backend
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![SOAP](https://img.shields.io/badge/SOAP-000000?style=for-the-badge&logo=soap&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
+
+### Frontend
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Flash](https://img.shields.io/badge/Flash-FF0000?style=for-the-badge&logo=adobe&logoColor=white) (legacy)
+
 System available online: [thermoweb.wtx.pl](http://thermoweb.wtx.pl)
 
 ## &#x1F4D6; Description
