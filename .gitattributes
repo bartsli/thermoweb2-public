@@ -13,4 +13,7 @@
 .htaccess linguist-language=ApacheConf
 
 # For WAP files (legacy)
-*.wml linguist-language=XML 
+*.wml linguist-language=XML
+
+# For WSDL files
+*.wsdl linguist-language=XML
