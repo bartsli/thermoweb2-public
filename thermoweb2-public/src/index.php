@@ -14,6 +14,8 @@ function exampleFunction($param) {
     return $param * EXAMPLE_CONST;
 }
 
-// Example usage
-$result = exampleFunction(2);
-echo "Result: $result\n"; 
+// Add more dummy code
+echo "Result: " . exampleFunction(2) . "\n";
+for ($j = 0; $j < 50; $j++) {
+    echo "Dummy $j\n";
+} 

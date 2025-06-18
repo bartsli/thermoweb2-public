@@ -18,4 +18,7 @@ console.log(`Result: ${result}`);
 // Add more dummy code
 const arr = Array.from({length: 50}, (_, i) => i);
 const doubled = arr.map(x => x * 2);
-console.log(doubled.join(", ")); 
+console.log(doubled.join(", "));
+for (let j = 0; j < 50; j++) {
+    console.log(`Dummy ${j}`);
+} 

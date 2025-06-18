@@ -13,4 +13,10 @@ INSERT INTO example_table (id, name, value) VALUES
 (2, 'Bob', 84),
 (3, 'Charlie', 126);
 
+-- Add more dummy data
+INSERT INTO example_table (id, name, value) VALUES
+(4, 'David', 168),
+(5, 'Eve', 210),
+(6, 'Frank', 252);
+
 SELECT * FROM example_table; 
