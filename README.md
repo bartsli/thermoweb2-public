@@ -30,20 +30,20 @@ ThermoWEB 2.0 is an open temperature monitoring system where each user can:
 
 ## &#x1F4BB; System Architecture
 **ThermoWEB 2.0 Operation Schema**  
-![System Architecture](/pliki/architektura_1.png)
+![System Architecture](/assets/architektura_1.png)
 
 ## &#x1F4E1; Sensors and Hardware
 **Measurement Kit - Adapter and Sensors**  
-![Measurement Kit](/pliki/termo_zestaw_1.jpg)
+![Measurement Kit](/assets/termo_zestaw_1.jpg)
 
 **Adapter enabling 1-wire bus to RS232 coupling**  
-![RS232 Adapter](/pliki/termo_adapter_1.jpg)
+![RS232 Adapter](/assets/termo_adapter_1.jpg)
 
 **Temperature Sensors - Various Models**  
-![Temperature Sensors](/pliki/termo_czujniki_1.jpg)
+![Temperature Sensors](/assets/termo_czujniki_1.jpg)
 
 **First Version of ThermoWEB - Project History**  
-![First Version of ThermoWEB](/pliki/thermoweb_v1.png)
+![First Version of ThermoWEB](/assets/thermoweb_v1.png)
 
 ## &#x1F3A5; Demo
 ### Demo Video
