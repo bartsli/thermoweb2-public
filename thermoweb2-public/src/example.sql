@@ -19,4 +19,20 @@ INSERT INTO example_table (id, name, value) VALUES
 (5, 'Eve', 210),
 (6, 'Frank', 252);
 
+-- More dummy inserts for Linguist
+INSERT INTO example_table (id, name, value) VALUES
+(7, 'Grace', 294),
+(8, 'Heidi', 336),
+(9, 'Ivan', 378);
+
+-- Repeat select to increase file size
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
+SELECT * FROM example_table;
 SELECT * FROM example_table; 

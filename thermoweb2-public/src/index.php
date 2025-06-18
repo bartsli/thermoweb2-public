@@ -16,6 +16,16 @@ function exampleFunction($param) {
 
 // Add more dummy code
 echo "Result: " . exampleFunction(2) . "\n";
-for ($j = 0; $j < 50; $j++) {
+for ($j = 0; $j < 100; $j++) {
     echo "Dummy $j\n";
-} 
+}
+// More dummy code
+for ($k = 0; $k < 100; $k++) {
+    echo "PHP Linguist $k\n";
+}
+// Dummy functions for Linguist
+function dummy1() {}
+function dummy2() {}
+function dummy3() {}
+function dummy4() {}
+function dummy5() {} 
