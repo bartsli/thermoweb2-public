@@ -1,5 +1,0 @@
-![Architektura systemu](/assets/architektura_1.png)
-![Zestaw pomiarowy](/assets/termo_zestaw_1.jpg)
-![Adapter RS232](/assets/termo_adapter_1.jpg)
-![Czujniki temperatury](/assets/termo_czujniki_1.jpg)
-![Pierwsza wersja ThermoWEB](/assets/thermoweb_v1.png) 

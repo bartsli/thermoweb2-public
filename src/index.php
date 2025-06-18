@@ -1,4 +1,15 @@
 <?php
+// This is a lightweight PHP file added for proper GitHub Linguist technology detection
+header('Content-Type: application/json');
+
+$temperature = [
+    'value' => 21.5,
+    'unit' => 'C',
+    'timestamp' => time()
+];
+
+echo json_encode($temperature);
+
 // Example PHP file for GitHub Linguist detection
 
 echo "Hello from PHP!\n";
