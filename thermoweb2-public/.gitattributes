@@ -1,0 +1,16 @@
+# Ustawienia dla GitHub Linguist - deklaracja technologii projektu
+*.java linguist-language=Java
+*.php linguist-language=PHP
+*.js linguist-language=JavaScript
+*.xml linguist-language=XML
+*.sql linguist-language=SQL
+
+# Dla plików Flash (legacy)
+*.swf linguist-language=ActionScript
+*.fla linguist-language=ActionScript
+
+# Dla plików konfiguracyjnych Apache
+.htaccess linguist-language=ApacheConf
+
+# Dla plików WAP (legacy)
+*.wml linguist-language=XML 
