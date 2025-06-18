@@ -1,4 +1,12 @@
 <!-- Example XML file for GitHub Linguist detection -->
 <root>
     <message>Hello from XML!</message>
+    <!-- Add more nodes to increase file size for Linguist -->
+    <items>
+        <item id="1">Item 1</item>
+        <item id="2">Item 2</item>
+        <item id="3">Item 3</item>
+        <item id="4">Item 4</item>
+        <item id="5">Item 5</item>
+    </items>
 </root> 
