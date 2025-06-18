@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a lightweight WSDL file added for proper GitHub Linguist technology detection -->
+<definitions name="ThermoWebService"
+    targetNamespace="http://thermoweb.wtx.pl/wsdl/temperature"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://thermoweb.wtx.pl/wsdl/temperature"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <message name="getTemperatureRequest">
+        <part name="sensorId" type="xsd:string"/>
+    </message>
+
+    <message name="getTemperatureResponse">
+        <part name="temperature" type="xsd:decimal"/>
+        <part name="timestamp" type="xsd:dateTime"/>
+    </message>
+
+    <portType name="Temperature_PortType">
+        <operation name="getTemperature">
+            <input message="tns:getTemperatureRequest"/>
+            <output message="tns:getTemperatureResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="Temperature_Binding" type="tns:Temperature_PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getTemperature">
+            <soap:operation soapAction="getTemperature"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="Temperature_Service">
+        <port name="Temperature_Port" binding="tns:Temperature_Binding">
+            <soap:address location="http://thermoweb.wtx.pl/soap/temperature"/>
+        </port>
+    </service>
+</definitions> 
