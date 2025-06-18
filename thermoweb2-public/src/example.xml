@@ -1,0 +1,4 @@
+<!-- Example XML file for GitHub Linguist detection -->
+<root>
+    <message>Hello from XML!</message>
+</root> 
