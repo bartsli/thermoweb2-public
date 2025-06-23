@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thermoweb-config xmlns="http://thermoweb.wtx.pl/config"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://thermoweb.wtx.pl/config thermoweb-config.xsd">
+    
+    <database>
+        <host>localhost</host>
+        <port>3306</port>
+        <name>thermoweb</name>
+        <user>thermoweb_user</user>
+        <password>${THERMOWEB_DB_PASSWORD}</password>
+        <connection-pool>
+            <min-size>5</min-size>
+            <max-size>20</max-size>
+            <timeout>30000</timeout>
+        </connection-pool>
+    </database>
+
+    <web-service>
+        <endpoint>http://thermoweb.wtx.pl/soap/temperature</endpoint>
+        <security>
+            <auth-type>basic</auth-type>
+            <ssl-enabled>true</ssl-enabled>
+            <allowed-origins>
+                <origin>http://localhost:3000</origin>
+                <origin>https://thermoweb.wtx.pl</origin>
+            </allowed-origins>
+        </security>
+        <rate-limiting>
+            <requests-per-minute>60</requests-per-minute>
+            <burst-size>10</burst-size>
+        </rate-limiting>
+    </web-service>
+
+    <logging>
+        <level>INFO</level>
+        <file>/var/log/thermoweb/app.log</file>
+        <rotation>
+            <max-size>10MB</max-size>
+            <max-files>5</max-files>
+        </rotation>
+        <format>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</format>
+    </logging>
+
+    <email-notifications>
+        <smtp>
+            <host>smtp.gmail.com</host>
+            <port>587</port>
+            <username>notifications@thermoweb.wtx.pl</username>
+            <password>${THERMOWEB_SMTP_PASSWORD}</password>
+            <use-tls>true</use-tls>
+        </smtp>
+        <templates>
+            <template id="alert">
+                <subject>Temperature Alert for {sensor_name}</subject>
+                <body>
+                    Alert for sensor {sensor_name} in {location}:
+                    Current temperature: {temperature}°C
+                    Threshold: {threshold}°C
+                    Time: {timestamp}
+                </body>
+            </template>
+        </templates>
+    </email-notifications>
+
+    <sensors>
+        <default-settings>
+            <reading-interval>300</reading-interval>
+            <alert-threshold>
+                <min>15.0</min>
+                <max>30.0</max>
+            </alert-threshold>
+        </default-settings>
+        <groups>
+            <group id="indoor">
+                <reading-interval>600</reading-interval>
+                <alert-threshold>
+                    <min>18.0</min>
+                    <max>26.0</max>
+                </alert-threshold>
+            </group>
+            <group id="outdoor">
+                <reading-interval>900</reading-interval>
+                <alert-threshold>
+                    <min>-10.0</min>
+                    <max>40.0</max>
+                </alert-threshold>
+            </group>
+        </groups>
+    </sensors>
+</thermoweb-config> 

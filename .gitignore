@@ -1,0 +1,39 @@
+# System
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+/build/
+/out/
+
+# PHP
+/vendor/
+composer.lock
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+*.swp
+*~
+
+# Flash
+*.swf
+*.fla
+
+# Others
+.env 

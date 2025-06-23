@@ -1,0 +1,6 @@
+<!-- Example WML file for GitHub Linguist detection -->
+<wml>
+    <card id="main" title="Hello">
+        <p>Hello from WML!</p>
+    </card>
+</wml> 

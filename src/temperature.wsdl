@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a lightweight WSDL file added for proper GitHub Linguist technology detection -->
+<definitions name="ThermoWebService"
+    targetNamespace="http://thermoweb.wtx.pl/wsdl/temperature"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://thermoweb.wtx.pl/wsdl/temperature"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Types -->
+    <types>
+        <xsd:schema targetNamespace="http://thermoweb.wtx.pl/wsdl/temperature">
+            <xsd:complexType name="SensorData">
+                <xsd:sequence>
+                    <xsd:element name="id" type="xsd:string"/>
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="location" type="xsd:string"/>
+                    <xsd:element name="isPublic" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            
+            <xsd:complexType name="MeasurementData">
+                <xsd:sequence>
+                    <xsd:element name="temperature" type="xsd:decimal"/>
+                    <xsd:element name="humidity" type="xsd:decimal"/>
+                    <xsd:element name="timestamp" type="xsd:dateTime"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages -->
+    <message name="getTemperatureRequest">
+        <part name="sensorId" type="xsd:string"/>
+    </message>
+
+    <message name="getTemperatureResponse">
+        <part name="measurement" type="tns:MeasurementData"/>
+    </message>
+
+    <message name="getSensorRequest">
+        <part name="sensorId" type="xsd:string"/>
+    </message>
+
+    <message name="getSensorResponse">
+        <part name="sensor" type="tns:SensorData"/>
+    </message>
+
+    <message name="getHistoricalDataRequest">
+        <part name="sensorId" type="xsd:string"/>
+        <part name="startDate" type="xsd:dateTime"/>
+        <part name="endDate" type="xsd:dateTime"/>
+    </message>
+
+    <message name="getHistoricalDataResponse">
+        <part name="measurements" type="tns:MeasurementData"/>
+    </message>
+
+    <!-- Port Type -->
+    <portType name="Temperature_PortType">
+        <operation name="getTemperature">
+            <input message="tns:getTemperatureRequest"/>
+            <output message="tns:getTemperatureResponse"/>
+        </operation>
+        
+        <operation name="getSensor">
+            <input message="tns:getSensorRequest"/>
+            <output message="tns:getSensorResponse"/>
+        </operation>
+        
+        <operation name="getHistoricalData">
+            <input message="tns:getHistoricalDataRequest"/>
+            <output message="tns:getHistoricalDataResponse"/>
+        </operation>
+    </portType>
+
+    <!-- Binding -->
+    <binding name="Temperature_Binding" type="tns:Temperature_PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        
+        <operation name="getTemperature">
+            <soap:operation soapAction="getTemperature"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+        <operation name="getSensor">
+            <soap:operation soapAction="getSensor"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+        <operation name="getHistoricalData">
+            <soap:operation soapAction="getHistoricalData"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:examples:temperatureservice" 
+                          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+
+    <!-- Service -->
+    <service name="Temperature_Service">
+        <port name="Temperature_Port" binding="tns:Temperature_Binding">
+            <soap:address location="http://thermoweb.wtx.pl/soap/temperature"/>
+        </port>
+    </service>
+</definitions> 

@@ -1,0 +1,39 @@
+<!-- Example XML file for GitHub Linguist detection -->
+<root>
+    <message>Hello from XML!</message>
+    <!-- Add more nodes to increase file size for Linguist -->
+    <items>
+        <item id="1">Item 1</item>
+        <item id="2">Item 2</item>
+        <item id="3">Item 3</item>
+        <item id="4">Item 4</item>
+        <item id="5">Item 5</item>
+        <item id="6">Item 6</item>
+        <item id="7">Item 7</item>
+        <item id="8">Item 8</item>
+        <item id="9">Item 9</item>
+        <item id="10">Item 10</item>
+        <!-- Dummy items for Linguist -->
+        <item id="11">Item 11</item>
+        <item id="12">Item 12</item>
+        <item id="13">Item 13</item>
+        <item id="14">Item 14</item>
+        <item id="15">Item 15</item>
+        <item id="16">Item 16</item>
+        <item id="17">Item 17</item>
+        <item id="18">Item 18</item>
+        <item id="19">Item 19</item>
+        <item id="20">Item 20</item>
+        <!-- More dummy items for Linguist -->
+        <item id="21">Item 21</item>
+        <item id="22">Item 22</item>
+        <item id="23">Item 23</item>
+        <item id="24">Item 24</item>
+        <item id="25">Item 25</item>
+        <item id="26">Item 26</item>
+        <item id="27">Item 27</item>
+        <item id="28">Item 28</item>
+        <item id="29">Item 29</item>
+        <item id="30">Item 30</item>
+    </items>
+</root> 
